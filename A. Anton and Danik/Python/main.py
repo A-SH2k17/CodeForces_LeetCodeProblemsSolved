@@ -3,7 +3,7 @@ winner = input()
 for i in winner:
     if i=='D':
         danik +=1
-    else:
+    elif i=="A":
         anton +=1
 if anton>danik:
     print("Anton")
