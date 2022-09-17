@@ -115,7 +115,7 @@ public:
         else if(current_last -> next == NULL)
             head = NULL;
         else{
-            current_last++;
+            current_last = current_last -> next;
             node* new_last = head;
             while(current_last->next != NULL){
                 current_last = current_last ->next;
@@ -182,5 +182,6 @@ public:
      list1.insert_node(1);
      list1.insert_node(8);
      list1.reverse_list();
+     list1.delete_last_node();
      list1.dipslay();
  }
